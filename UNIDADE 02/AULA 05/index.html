@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 Design Web - Formulários</title>
+</head>
+<body>
+        <form name="frm-contatos" method="POST" enctype="">
+            <label for="nome">Nome:</label>
+            <input type="text" name="txt-nome"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="txt-email"><br>
+            <label for="cidades">Cidades:</label>
+            <select name="slt-cidades">
+                    <option>São Paulo</option>
+                    <option>Taboa da Serra</option>
+                    <option>Osasco</option>
+                    <option>Carapicuíba</option>
+            </select><br>
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="rdo-sexo">Feminino
+            <input type="radio" name="rdo-sexo">Masculino<br>
+
+            <label for="formação">Formação Escolar:</label>
+            <input type="checkbox" name="chk-medio">Ensino Médio
+            <input type="checkbox" name="chk-graduação">Graduação
+            <input type="checkbox" name="chk-Pos">Pós Graduação<br>
+            <label for="observação">Observação:</label>
+            <textarea name="txt-observação" cols="40" rows="5"></textarea><br>
+
+            <input type="submit" value="Salvar">
+        </form>
+</body>
+</html>

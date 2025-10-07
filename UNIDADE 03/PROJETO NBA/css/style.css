@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+h2{
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    font-family: arial;
+    font-size: 4em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+h3{
+    width: 100%;
+    height: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
+
+    font-family: verdana;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+p{
+    width: 100%;
+    height: auto;
+
+    font-family: verdana;
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: #7f7a7a;
+    padding-top: 10px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.nome-jogador{
+    text-transform: capitalize;
+}
+  
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #D30529;
+}
+
+/* Menu do Site*/
+nav{
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+     /** margin-right: auto; **/
+}
+
+nav ul{
+        width: 100%;
+        height: 70%;
+        list-style: none;
+}
+
+nav ul li {
+    width: 120px;
+    height: 50px;
+    float: left;
+    font-family: arial;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+main{
+    width: 100%;
+    height: 4300px;
+    background-color: bisque;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+#basquete{
+    width: 100%;
+    height: 800px;
+    background-color: #010101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#basquete div{
+        width: 30%;
+        min-width: 400px;
+        height: 100%;
+        /*background-color: #bbb807;*/
+        /* opacity: 0.5;*/
+        /*margin-right: 10px;*/
+}
+
+#logo_nba{
+         background-image: url(../image/logo_nba.png);
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size:   auto 150%;
+}
+
+#lendas img{
+        width: 350px;
+        height: 250px;
+        border-radius: 20%;
+        margin-top: 50px;
+        display : block;
+}
+
+#banner1{
+        width: 100%;
+        height: 800px;
+        background-color: #aa1212;
+        background-image: url(../image/banner_Jordan.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+
+#banner1 div{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(199, 0, 0, 0.5);
+        /* opacity: 0.5;*/
+}
+
+#equipes{
+    width: 100%;
+    height: 1600px;
+    background-color: #151414;
+}
+
+#container-equipes{
+        width: 1600px;
+        min-height: 500px;
+        height: auto;
+        margin: auto;
+        display: grid;grid-template-columns: 1fr 1fr 1fr;
+}
+
+#container-equipes div{
+        width: 450px;
+        height: 700px;
+        margin-bottom: 50px;
+}
+
+#container-equipes div h3{
+        text-align: center;
+        
+}
+
+#container-equipes div img{
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: auto;
+        display: block;
+}
+
+
+#banner2{
+        width: 100%;
+        height: 1100px;
+        background-color: yellow;
+        background-image: url(../image/lebron.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+#banner2 div{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(197, 144, 1, 0.5);
+        /* opacity: 0.5;*/
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+}                                                                                                                                                                   
