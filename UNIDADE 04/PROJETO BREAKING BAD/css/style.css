@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/* Área global do projeto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+h2 {
+  width: 100%;
+  height: 50px;
+  font-family: arial;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+p {
+  width: 90%;
+  min-height: 50px;
+  font-family: verdana;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+
+.backgroud-img-default {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-auto-height {
+  min-height: 100px;
+  height: auto;
+  overflow: hidden;
+}
+
+.content-default {
+  width: 90vw;
+  margin: auto;
+}
+
+/*  */
+header {
+  width: 100vw;
+  height: 80vh;
+  background-color: blueviolet;
+  background-image: url(../image/breaking_bad.jpg);
+}
+
+header nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul {
+  width: 80%;
+  height: 10%;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 5px;
+}
+
+header nav ul li:hover {
+  background-color: #ffea04;
+  cursor: pointer;
+  color: #000000;
+  font-weight: bolder;
+}
+
+header nav ul li {
+  width: 200px;
+  height: 80px;
+  margin-right: 20px;
+  font-family: arial;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100vw;
+  min-height: 1000px;
+}
+
+/* Seções de conteúdo */
+#sinopse {
+  width: 100vw;
+  height: 650px;
+  background-color: #ffffff;
+}
+
+#banner1 {
+  width: 100vw;
+  height: 650px;
+  background-image: url(../image/banner1.jpg);
+}
+
+#sucesso-audiencia {
+  width: 100vw;
+  min-height: 650px;
+  background-color: #ffea04;
+}
+
+#sucesso-audiencia div p {
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+}
+
+#saiba-mais {
+  width: 100vw;
+  height: 650px;
+  background-image: url(../image/saibamais.jpg);
+  background-attachment: scroll;
+  background-position: center top;
+}
+
+#saiba-mais h2 {
+  color: #ffffff;
+}
+
+#saiba-mais .content-default {
+  width: 50%;
+  margin: 0px;
+  margin-right: auto;
+  padding-left: 5%;
+}
+
+#saiba-mais .content-default p {
+  color: #ffffff;
+}
+
+#episodios {
+  width: 100vw;
+  min-height: 1100px;
+  background-color: #ffffff;
+}
+
+#container-episodios {
+  width: 100%;
+  min-height: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+#container-episodios div img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* Para telas maiores - ajuste específico para episódios */
+@media screen and (min-width: 800px) {
+  #container-episodios {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  #container-episodios div:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  #container-episodios div:nth-child(2) {
+    grid-area: 1/2/2/3;
+  }
+  #container-episodios div:nth-child(3) {
+    grid-area: 2/1/3/2;
+  }
+  #container-episodios div:nth-child(4) {
+    grid-area: 2/2/3/3;
+  }
+}
+#banner2 {
+  width: 100vw;
+  height: 650px;
+  background-image: url(../image/banner2.jpg);
+}
+
+#curiosidades {
+  width: 100vw;
+  height: 500px;
+  background-color: white;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: #000000;
+}
+
+/* MOBILE */
+@media screen and (max-device-width: 799px) {
+  h2 {
+    text-align: center;
+  }
+  .content-default {
+    width: 100vw;
+    /* background-color: antiquewhite; */
+  }
+  header {
+    height: 30vh;
+  }
+  .backgroud-img-default {
+    background-size: contain;
+    background-attachment: scroll;
+  }
+  header nav {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url(../image/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+  }
+  header nav ul {
+    display: none;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+  }
+  header nav:hover > #menu {
+    display: block;
+  }
+  #saiba-mais {
+    background-image: none;
+    background-color: #000000;
+  }
+  #saiba-mais .content-default {
+    width: 100%;
+  }
+  #sucesso-audiencia div p {
+    width: 90%;
+    float: none;
+    margin-bottom: 10%;
+  }
+  #episodios div {
+    width: 95vw;
+  }
+} /*# sourceMappingURL=style.css.map */
